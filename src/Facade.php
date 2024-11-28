@@ -270,7 +270,6 @@ class Facade extends DataContainer implements PaymentInterface {
      */
 
     public function accept(string $successMessage) {
-        header('Content-Type: application/xml', true, 200);
         $this->answer->status = 'ok';
         $this->answer->description = $successMessage;
         $this->save();
