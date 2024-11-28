@@ -306,7 +306,6 @@ class Facade extends DataContainer implements PaymentInterface {
      */
 
     public function cancel(string $cancelDescription) {
-        header('Content-Type: application/xml', true, 200);
         $this->answer->status = 'rejected';
         $this->answer->description = $cancelDescription;
         $this->save();
