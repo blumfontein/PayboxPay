@@ -16,6 +16,6 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "payboxmoney/core": "^1.2.0"
+        "payboxmoney/core": "dev-master"
     }
 }
